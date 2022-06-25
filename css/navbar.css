@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navTitle{
+    display: inline;
+    font-size: xx-large;
+}
+
+.navbar-grid{
+    background-color: green;
+    display: grid;
+    grid-template-columns: 4fr auto auto auto;
+    gap: 10px;
+}
+
+.navbar-grid .grid-item{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 80px; 
+}
+.navImgs{
+    width:80px;
+}
+
+@media (max-width: 600px) {
+    #navTitle{
+        font-size: large;
+    }
+    .logo {
+        width: 40px; 
+    }
+    .navImgs{
+        width:40px;
+    }
+}

@@ -1,0 +1,67 @@
+.grid-body{
+    display: grid;
+    grid-template-areas: 
+        "tituloBody tituloBody"
+        "subtituloBody subtituloBody"
+        "tituloForm tituloForm"
+        "formulario formulario"
+        ;
+}
+
+.grid-body .grid-body-item{
+    align-content: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    grid-area: tituloForm;
+}
+h2{
+    text-align: center;
+    grid-area: tituloBody;
+    
+}
+h3{
+    text-align: center;
+    grid-area: subtituloBody;
+}
+#bottomH2{
+    padding-bottom: 30px;
+}
+form div{
+    flex-flow: row;
+    margin: 20px;
+}
+.containReg{
+    border: 2px solid black;
+    grid-area: formulario;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+div input{
+    width: 100%;
+}
+
+@media (max-width:600px){
+    h1{
+        margin-bottom: 10px;
+        font-size: large;
+    }
+    h2{
+        text-align: center;
+        font-size: medium;
+    }
+    h3{
+        font-size: medium;
+        text-align: center;
+    }
+    #bottomH2{
+        padding-bottom: 15px;
+    }
+    form div{
+        margin: 10px 5px;
+    }
+}
