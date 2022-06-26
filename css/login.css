@@ -17,15 +17,17 @@ h1{
     text-align: center;
     margin-bottom: 20px;
     grid-area: tituloForm;
+    animation: backInDown 1s;
 }
 h2{
     text-align: center;
     grid-area: tituloBody;
-    
+    animation: bounceInLeft 4s linear;
 }
 h3{
     text-align: center;
     grid-area: subtituloBody;
+    animation: bounceInLeft 5s linear;
 }
 #bottomH2{
     padding-bottom: 30px;
@@ -40,6 +42,8 @@ form div{
     width: 30%;
     margin-left: 35%;
     text-align: center;
+    animation: bounceInLeft 1.5s;
+
 }
 div input{
     width: 100%;
