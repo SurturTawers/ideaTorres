@@ -4,124 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/editor.css">
+    <link rel="stylesheet" href="./css/comp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Surveycado</title>
 </head>
 <body>
-    <nav class="navbar-grid">
-        <div class="grid-item">
-            <img class="logo" src="./imgs/logo.png" alt="">
-            <h1 id="navTitle">Surveycado</h1>
+    <nav class="navbar navbar-brand bg-success container-fluid">
+        <div>
+            <img class="logo animate__bounce img-fluid float-left" width="80" src="./imgs/logo.png" alt="">
+            <span class="navbrand h1 animate__backInDown">Surveycado</span>
         </div>
-        <a class="grid-item" href="./index.html"><img class="navImgs" src="./imgs/home.png" alt="" ></a>
-        <a class="grid-item" href="./contacto.html"><img class="navImgs" src="./imgs/contact.png" alt="" ></a>
-        <a class="grid-item" href="./index.html"><img class="navImgs" src="./imgs/logout.png" alt=""></a>
+        <div class="float-right d-flex">
+            <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/home.png" alt="" ></a>
+            <a href="./contacto.html"><img class="navImgs mx-2" width="50" src="./imgs/contact.png" alt=""></a>
+            <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/logout.png" alt=""></a>
+        </div>
     </nav>
-    <h2>Bienvenido usuario "username"</h2>
-    <div class="grid-encuestaList">
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
+    <span class="text-left h2 ">Bienvenido usuario %username%</span>
+    <div class="w-100">
+        <div class="card my-sm-2 mx-sm-4 glowingCard">
+            <div class="row">
+                <div class="col d-flex-block text-truncate">
+                    <p class="h5">Encuesta</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
-                </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-info ms-1">Editar</button>
+                    <button class="btn btn-success ms-1">Enviar</button>
+                    <button class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
+        <div class="card my-sm-2 mx-sm-4 glowingCard">
+            <div class="row">
+                <div class="col d-flex-block text-truncate">
+                    <p class="h5">Encuesta</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
-                </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-info ms-1">Editar</button>
+                    <button class="btn btn-success ms-1">Enviar</button>
+                    <button class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
+        <div class="card my-sm-2 mx-sm-4 glowingCard">
+            <div class="row">
+                <div class="col d-flex-block text-truncate">
+                    <p class="h5">Encuesta</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
-                </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-info ms-1">Editar</button>
+                    <button class="btn btn-success ms-1">Enviar</button>
+                    <button class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
-        <div class="grid-encuestaList-item">
-            <div class="containReg">
-                <div class="grid-listItems">
-                    <p>Encuesta</p>
-                    <p>Descripción </p>
-                </div>
-                <div class="grid-listItems">
-                    <button>Editar</button>
-                    <button>Enviar</button>
-                    <button>Eliminar</button>
-                </div>
-            </div>
+        
+    </div>
+    <div class="d-sm-flex d-block justify-content-evenly mt-3">
+        <div>
+            <img src="./imgs/plus.png" alt="" width="40">
+            <button class="btn btn-success">Agregar Encuesta</button>
         </div>
-        <div class="botones">
-            <div>
-                <img src="./imgs/plus.png" alt="" width="50px">
-                <button>Agregar Encuesta</button>
-            </div>
-            <div>
-                <img src="./imgs/user.png" alt="" width="50px">
-                <button>Ver encuestados</button>
-            </div>
+        <div>
+            <img src="./imgs/user.png" alt="" width="40">
+            <button class="btn btn-success">Ver encuestados</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
