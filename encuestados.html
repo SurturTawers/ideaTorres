@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/comp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Surveycado</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-brand bg-success container-fluid">
+            <div>
+                <img class="logo animate__bounce img-fluid float-left" width="80" src="./imgs/logo.png" alt="">
+                <a href="./index.html" style="text-decoration: none; color:black;"><span class="navbrand navTitle h1 animate__backInDown d-inline-block">Surveycado</span></a>
+            </div>
+            <div class="float-right d-flex">
+                <a href="./contacto.html"><img class="navImgs mx-2" width="50" src="./imgs/contact.png" alt=""></a>
+                <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/logout.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Encuestados/Correos -->
+    <div class="tableAnim p-md-5">
+        <input placeholder="Buscar..." type="text" class="mt-4 mb-3">
+        <table class="table table-sm table-striped table-hover table-bordered">
+            <thead class="table-success">
+                <tr class="d-flex">
+                    <th class="col-4">Nombre</th>
+                    <th class="col-4">Correo</th>
+                    <th class="col-4">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="d-flex">
+                    <td class="col-4">Username</td>
+                    <td class="col-4">correo@correo.com</td>
+                    <td class="col-4">
+                        <button onclick="alert('Esto abre un modal')" class="btn btn-success col-5 overflow-hidden">Encuestas Contestadas</button>
+                        <button onclick="alert('Esto elimina un encuestado')" class="btn btn-danger"><img src="./imgs/delete.png" class="navImgs" width="30" alt=""></button>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-4">Username</td>
+                    <td class="col-4">correo@correo.com</td>
+                    <td class="col-4">
+                        <button onclick="alert('Esto abre un modal')" class="btn btn-success col-5 overflow-hidden">Encuestas Contestadas</button>
+                        <button onclick="alert('Esto elimina un encuestado')" class="btn btn-danger"><img src="./imgs/delete.png" class="navImgs" width="30" alt=""></button>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-4">Username</td>
+                    <td class="col-4">correo@correo.com</td>
+                    <td class="col-4">
+                        <button onclick="alert('Esto abre un modal')" class="btn btn-success col-5 overflow-hidden">Encuestas Contestadas</button>
+                        <button onclick="alert('Esto elimina un encuestado')" class="btn btn-danger"><img src="./imgs/delete.png" class="navImgs" width="30" alt=""></button>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-4">Username</td>
+                    <td class="col-4">correo@correo.com</td>
+                    <td class="col-4">
+                        <button onclick="alert('Esto abre un modal')" class="btn btn-success col-5 overflow-hidden">Encuestas Contestadas</button>
+                        <button onclick="alert('Esto elimina un encuestado')" class="btn btn-danger"><img src="./imgs/delete.png" class="navImgs" width="30" alt=""></button>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-sm-flex d-block justify-content-evenly mt-3">
+            <div>
+                <img src="./imgs/plus.png" alt="" width="40">
+                <button onclick="alert('Esto abre un modal con un formulario')" class="btn btn-success">Agregar Encuestado</button>
+            </div>
+            <div>
+                <img src="./imgs/encuestas.png" alt="" width="40">
+                <a href="./editor.html" class="btn btn-success">Ver Encuestas</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,15 +1,36 @@
 .logo {
     animation: bounce 1s linear 1s;  
 }
-
 .animH2{
-    animation: bounceInLeft 3s linear;
+    animation: bounceInLeft 1.5s linear;
 }
 .animH3{
-    animation: bounceInLeft 4s linear;
+    animation: bounceInLeft 2.5s linear;
 }
 .cardAnim{
-    animation: bounceInLeft 1.5s;
+    animation: bounceInLeft 1s;
+}
+.contactAnim{
+    animation: bounceInRight 1s linear;
+}
+.tableAnim{
+    animation: bounceInUp 0.8s ease-out;
+}
+.encuestaAnim{
+    animation: fadeInUp 0.8s ease-out ;
+}
+/* TRANSICIONES */
+.navTitle{
+    transition: transform 0.5s;
+}
+.navTitle:hover{
+    transform: scale(1.2);
+}
+.glowingAnswer{
+    transition: all 0.5s;
+}
+.glowingAnswer:hover{
+    background-color: rgb(41, 184, 41);
 }
 
 @media (min-width:768px) {
@@ -24,7 +45,7 @@
         animation: bounceInLeft 1.5s;
     }
     .glowingCard:hover{
-        transform: scale(1.2);
+        transform: scale(1.03);
         background-color: lightgreen;
     }
-}
+} 

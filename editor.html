@@ -10,19 +10,22 @@
     <title>Surveycado</title>
 </head>
 <body>
-    <nav class="navbar navbar-brand bg-success container-fluid">
-        <div>
-            <img class="logo animate__bounce img-fluid float-left" width="80" src="./imgs/logo.png" alt="">
-            <span class="navbrand h1 animate__backInDown">Surveycado</span>
-        </div>
-        <div class="float-right d-flex">
-            <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/home.png" alt="" ></a>
-            <a href="./contacto.html"><img class="navImgs mx-2" width="50" src="./imgs/contact.png" alt=""></a>
-            <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/logout.png" alt=""></a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-brand bg-success container-fluid">
+            <div>
+                <img class="logo animate__bounce img-fluid float-left" width="80" src="./imgs/logo.png" alt="">
+                <a href="./index.html" style="text-decoration: none; color:black;"><span class="navbrand navTitle h1 animate__backInDown d-inline-block">Surveycado</span></a>
+            </div>
+            <div class="float-right d-flex">
+                <a href="./contacto.html"><img class="navImgs mx-2" width="50" src="./imgs/contact.png" alt=""></a>
+                <a href="./index.html"><img class="navImgs mx-2" width="50" src="./imgs/logout.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Titulo -->
     <span class="text-left h2 ">Bienvenido usuario %username%</span>
-    <div class="w-100">
+     <!-- Listado Encuestas -->
+     <div class="w-100">
         <div class="card my-sm-2 mx-sm-4 glowingCard">
             <div class="row">
                 <div class="col d-flex-block text-truncate">
@@ -30,9 +33,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <button class="btn btn-info ms-1">Editar</button>
-                    <button class="btn btn-success ms-1">Enviar</button>
-                    <button class="btn btn-danger ms-1">Eliminar</button>
+                    <button onclick="alert('Esto abre un modal para editar encuestas')" class="btn btn-info ms-1">Editar</button>
+                    <button onclick="alert('Esto abre un modal con los correos disponibles para enviar la encuesta')" class="btn btn-success ms-1">Enviar</button>
+                    <button onclick="alert('Esto elimina una encuesta')" class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -43,9 +46,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <button class="btn btn-info ms-1">Editar</button>
-                    <button class="btn btn-success ms-1">Enviar</button>
-                    <button class="btn btn-danger ms-1">Eliminar</button>
+                    <button onclick="alert('Esto abre un modal para editar encuestas')" class="btn btn-info ms-1">Editar</button>
+                    <button onclick="alert('Esto abre un modal con los correos disponibles para enviar la encuesta')" class="btn btn-success ms-1">Enviar</button>
+                    <button onclick="alert('Esto elimina una encuesta')" class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -56,22 +59,21 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nulla ratione corporis voluptates voluptate possimus, perspiciatis, maiores consectetur similique, tenetur ex placeat tempore optio illum deleniti magni! Cupiditate, minima.</p>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <button class="btn btn-info ms-1">Editar</button>
-                    <button class="btn btn-success ms-1">Enviar</button>
-                    <button class="btn btn-danger ms-1">Eliminar</button>
+                    <button onclick="alert('Esto abre un modal para editar encuestas')" class="btn btn-info ms-1">Editar</button>
+                    <button onclick="alert('Esto abre un modal con los correos disponibles para enviar la encuesta')" class="btn btn-success ms-1">Enviar</button>
+                    <button onclick="alert('Esto elimina una encuesta')" class="btn btn-danger ms-1">Eliminar</button>
                 </div>
             </div>
         </div>
-        
     </div>
     <div class="d-sm-flex d-block justify-content-evenly mt-3">
         <div>
             <img src="./imgs/plus.png" alt="" width="40">
-            <button class="btn btn-success">Agregar Encuesta</button>
+            <button onclick="alert('Esto abre un modal para agregar encuestas')" class="btn btn-success">Agregar Encuesta</button>
         </div>
         <div>
             <img src="./imgs/user.png" alt="" width="40">
-            <button class="btn btn-success">Ver encuestados</button>
+            <a href="./encuestados.html" class="btn btn-success">Ver encuestados</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
