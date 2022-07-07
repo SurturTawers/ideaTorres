@@ -1,0 +1,33 @@
+body{
+    .animH2{
+        animation: bounceInLeft 1.5s linear;
+    }
+    .animH3{
+        animation: bounceInLeft 2.5s linear;
+    }
+    div{
+        & .cardAnim{
+            animation: bounceInLeft 1s;
+        }
+        @media (min-width: $anchoMinimoAnimaciones){
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+        }
+        div{
+            span{
+                border: 1px solid $colorPrincipal;
+            }
+            div{
+                border: 1px solid $colorPrincipal;
+                margin: 0px;
+                form{
+                    border: none;
+                    div{
+                        border: none;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

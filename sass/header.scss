@@ -1,0 +1,36 @@
+header{
+    nav{
+        div{
+            a{
+                text-decoration: none; 
+                color:black;
+            }
+            a:hover{
+                color:black;
+            }
+        }
+    }
+    background-color: $colorPrincipal;
+    .logo{
+        width: 60px;
+        animation: bounce 1s linear 1s;  
+    }
+    .navImgs{
+        margin: 0.5rem;
+        width: $navImgWidth;
+    }
+    @media (min-width: $anchoMinimoAnimaciones) {
+        .navImgs{
+            transition: transform $hoverGrowthTime;
+        }
+        .navImgs:hover{
+            transform: scale(1.3);
+        }
+        .navTitle{
+            transition: transform $hoverGrowthTime;
+        }
+        .navTitle:hover{
+            transform: scale(1.2);
+        }
+    }
+}
