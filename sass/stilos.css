@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.imagen, header .navImgs, header .logo {
+  width: 50px;
+  background-color: rgb(107, 34, 176);
+  border-radius: 25%;
+}
+
 header {
   background-color: rgb(25, 135, 84);
 }
@@ -9,13 +22,11 @@ header nav div a:hover {
   color: black;
 }
 header .logo {
-  width: 60px;
   -webkit-animation: bounce 1s linear 1s;
           animation: bounce 1s linear 1s;
 }
 header .navImgs {
   margin: 0.5rem;
-  width: 50px;
 }
 @media (min-width: 768px) {
   header .navImgs {
@@ -41,8 +52,8 @@ body .animH3 {
           animation: bounceInLeft 2.5s linear;
 }
 body div .cardAnim {
-  -webkit-animation: bounceInLeft 1s;
-          animation: bounceInLeft 1s;
+  -webkit-animation: bounceInLeft 1s linear;
+          animation: bounceInLeft 1s linear;
 }
 @media (min-width: 768px) {
   body div {
@@ -65,9 +76,41 @@ body div div div form div {
   margin-bottom: 16px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.linksLista {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+footer ul {
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer ul li a:hover {
+  color: rgb(25, 135, 84);
+}
+footer ul p {
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
 }/*# sourceMappingURL=stilos.css.map */

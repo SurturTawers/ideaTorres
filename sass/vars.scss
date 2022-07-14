@@ -1,6 +1,10 @@
 //Estilos gráficos
-$colorPrincipal: rgb(25,135,84);
-$colorElementos: lightgreen;
+$colores: (
+    colorPrincipal: rgb(25,135,84),
+    colorElementos: lightgreen,
+    colorFooter: rgb(232, 232, 232)
+);
+
 $fuentePrincipal: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 //Sizes

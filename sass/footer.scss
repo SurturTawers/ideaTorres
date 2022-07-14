@@ -1,0 +1,45 @@
+@import 'vars';
+html{
+    min-height: 100%;
+    position: relative;
+}
+@mixin footerElements ($backCL, $marBot) {
+    background-color: $backCL;
+    margin-bottom: $marBot;
+}
+.linksLista{
+    margin-bottom: 10px;
+}
+
+footer{
+    @include footerElements(map-get($colores,colorFooter), 0px);
+    // background-color: $colorFooter;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    ul{
+        @include footerElements(map-get($colores,colorFooter), 20px);
+        // background-color: $colorFooter;
+        // margin-bottom: 20px;
+        list-style-type: none;
+        li{
+            margin-bottom: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: map-get($colores,colorPrincipal);
+            }
+        }
+        p{
+            @include footerElements(map-get($colores,colorFooter), 10px);
+            // background-color: $colorFooter;
+            // margin-bottom: 10px;
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
+    
+}

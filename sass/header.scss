@@ -1,3 +1,8 @@
+.imagen{
+    width: $navImgWidth;
+    background-color: rgb(107, 34, 176);
+    border-radius: 25%;
+}
 header{
     nav{
         div{
@@ -10,14 +15,16 @@ header{
             }
         }
     }
-    background-color: $colorPrincipal;
+    background-color: map-get($colores,colorPrincipal);
     .logo{
-        width: 60px;
+        @extend .imagen;
+        // width: 60px;
         animation: bounce 1s linear 1s;  
     }
     .navImgs{
+        @extend .imagen;
+        // width: $navImgWidth;
         margin: 0.5rem;
-        width: $navImgWidth;
     }
     @media (min-width: $anchoMinimoAnimaciones) {
         .navImgs{
