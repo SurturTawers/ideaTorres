@@ -1,0 +1,36 @@
+.imagen, header .navImgs, header .logo {
+  width: 50px;
+  border-radius: 25%;
+}
+
+header {
+  background-color: rgb(25, 135, 84);
+}
+header nav div a {
+  text-decoration: none;
+  color: black;
+}
+header nav div a:hover {
+  color: black;
+}
+header .logo {
+  -webkit-animation: bounce 1s linear 1s;
+          animation: bounce 1s linear 1s;
+}
+header .navImgs {
+  margin: 0.5rem;
+}
+@media (min-width: 768px) {
+  header .navImgs {
+    transition: transform 0.5s;
+  }
+  header .navImgs:hover {
+    transform: scale(1.3);
+  }
+  header .navTitle {
+    transition: transform 0.5s;
+  }
+  header .navTitle:hover {
+    transform: scale(1.2);
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,36 +1,32 @@
-@mixin anims ($anim, $time, $type) {
-    animation: $anim $time $type;
-}
 body{
-    .animH2{
-        @include anims(bounceInLeft, 1.5s, linear);
-        // animation: bounceInLeft 1.5s linear;
-    }
-    .animH3{
-        @include anims(bounceInLeft, 2.5s, linear);
-        // animation: bounceInLeft 2.5s linear;
-    }
     div{
         & .cardAnim{
-            @include anims(bounceInLeft, 1s, linear);
-            // animation: bounceInLeft 1s;
+            @include anims(bounceInLeft, 1s, linear, 0s);
         }
         @media (min-width: $anchoMinimoAnimaciones){
             margin-left: 0.75rem;
             margin-right: 0.75rem;
         }
-        div{
+        .card{
             span{
                 border: 1px solid map-get($colores,colorPrincipal);
             }
-            div{
+            .card-body{
                 border: 1px solid map-get($colores,colorPrincipal);
                 margin: 0px;
                 form{
-                    border: none;
+                    .card-header{
+                        border: 1px solid lightgray;
+                    }
                     div{
                         border: none;
                         margin-bottom: 16px;
+                    }
+                    .card{
+                        border: 1px solid lightgray;
+                        .card-header{
+                            border: 1px solid lightgray;
+                        }
                     }
                 }
             }

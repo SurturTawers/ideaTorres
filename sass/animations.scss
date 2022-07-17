@@ -1,0 +1,50 @@
+@mixin anims ($anim, $time, $type, $delay) {
+    animation: $anim $time $type $delay;
+}
+body{
+    .contactAnim{
+        @include anims(bounceInRight, 1s, linear, 0s);
+    }
+    .tableAnim{
+        @include anims(bounceInUp, 0.8s, ease-out, 0s);
+    }
+    .encuestaAnim{
+        @include anims(fadeInUp, 0.8s, ease-out, 0s);
+    }
+    .animH2{
+        @include anims(bounceInLeft, 1.5s, linear, 0s);
+    }
+    .animH3{
+        @include anims(bounceInLeft, 2.5s, linear, 0s);
+    }
+    /* TRANSICIONES */
+    .navTitle{
+        transition: transform 0.5s;
+    }
+    .navTitle:hover{
+        transform: scale(1.2);
+    }
+    .glowingAnswer{
+        transition: all 0.5s;
+    }
+    .glowingAnswer:hover{
+        background-color: rgb(41, 184, 41);
+    }
+    @media (min-width:768px) {
+        .navImgs{
+            transition: transform 0.5s;
+        }
+        .navImgs:hover{
+            transform: scale(1.3);
+        }
+        .glowingCard{
+            border:none;
+            transition: all 0.5s;
+            @include anims(bounceInLeft, 1.5s, linear, 0s);
+        }
+        .glowingCard:hover{
+            transform: scale(1.03);
+            background-color: lightgreen;
+        }
+    } 
+}

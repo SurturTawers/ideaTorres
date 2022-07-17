@@ -1,0 +1,53 @@
+body {
+  /* TRANSICIONES */
+}
+body .contactAnim {
+  -webkit-animation: bounceInRight 1s linear 0s;
+          animation: bounceInRight 1s linear 0s;
+}
+body .tableAnim {
+  -webkit-animation: bounceInUp 0.8s ease-out 0s;
+          animation: bounceInUp 0.8s ease-out 0s;
+}
+body .encuestaAnim {
+  -webkit-animation: fadeInUp 0.8s ease-out 0s;
+          animation: fadeInUp 0.8s ease-out 0s;
+}
+body .animH2 {
+  -webkit-animation: bounceInLeft 1.5s linear 0s;
+          animation: bounceInLeft 1.5s linear 0s;
+}
+body .animH3 {
+  -webkit-animation: bounceInLeft 2.5s linear 0s;
+          animation: bounceInLeft 2.5s linear 0s;
+}
+body .navTitle {
+  transition: transform 0.5s;
+}
+body .navTitle:hover {
+  transform: scale(1.2);
+}
+body .glowingAnswer {
+  transition: all 0.5s;
+}
+body .glowingAnswer:hover {
+  background-color: rgb(41, 184, 41);
+}
+@media (min-width: 768px) {
+  body .navImgs {
+    transition: transform 0.5s;
+  }
+  body .navImgs:hover {
+    transform: scale(1.3);
+  }
+  body .glowingCard {
+    border: none;
+    transition: all 0.5s;
+    -webkit-animation: bounceInLeft 1.5s linear 0s;
+            animation: bounceInLeft 1.5s linear 0s;
+  }
+  body .glowingCard:hover {
+    transform: scale(1.03);
+    background-color: lightgreen;
+  }
+}/*# sourceMappingURL=animations.css.map */

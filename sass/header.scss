@@ -1,7 +1,6 @@
+@import 'vars';
 .imagen{
     width: $navImgWidth;
-    background-color: rgb(107, 34, 176);
-    border-radius: 25%;
 }
 header{
     nav{
@@ -18,8 +17,7 @@ header{
     background-color: map-get($colores,colorPrincipal);
     .logo{
         @extend .imagen;
-        // width: 60px;
-        animation: bounce 1s linear 1s;  
+        @include anims(bounce, 1s, linear, 1s);
     }
     .navImgs{
         @extend .imagen;
