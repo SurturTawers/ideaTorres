@@ -92,6 +92,11 @@ body .glowingAnswer:hover {
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .card .row {
+    display: inline-block;
+  }
+}
 .card .row div {
   border: none;
 }

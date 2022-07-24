@@ -38,8 +38,12 @@
     .row{
         border: 1px solid lightgray;
         border-radius: 5px;
+        @media (max-width: 768px){
+            display: inline-block;
+        }
         div{
             border:none;
+            
         }
     }
     div{
